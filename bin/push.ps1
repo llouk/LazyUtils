@@ -31,8 +31,8 @@ if ($message.Length -gt $settingsObject.messageMaxLength) {
 }
 
 #Trim title
-if ($title.Length -gt $settingsObject.messageTitleLengtt) {
-	$title = $title.Substring(0, $settingsObject.messageTitleLength)
+if ($title.Length -gt $settingsObject.titleMaxLength) {
+	$title = $title.Substring(0, $settingsObject.titleMaxLength)
 	$title += "..."
 }
 

@@ -3,5 +3,5 @@
 	"pushoverUsrTokenEncr": "YOUR_USER_KEY",
 	"pushoverApiTokenEncr": "YOUR_API_KEY",
 	"messageMaxLength" : 1021,
-	"messageTitleLength": 240
+	"titleMaxLength": 240
 }
