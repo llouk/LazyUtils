@@ -1,0 +1,7 @@
+{
+	"pushoverEndpoint": "https://api.pushover.net/1/messages.json",
+	"pushoverUsrTokenEncr": "YOUR_USER_KEY",
+	"pushoverApiTokenEncr": "YOUR_API_KEY",
+	"messageMaxLength" : 1021,
+	"messageTitleLength": 240
+}
