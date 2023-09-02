@@ -5,4 +5,5 @@ param
     $inputMessage
 )
 
-echo $inputMessage | openssl base64
+#echo $inputMessage | openssl base64
+echo $inputMessage | python -m base64 -e
