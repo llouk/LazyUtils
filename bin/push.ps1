@@ -8,7 +8,10 @@ param
 	$message,
 	[Parameter(Mandatory = $False)]
 	[string]
-	$title
+	$title,
+	[Parameter(Mandatory = $False)]
+	[string]
+	$target
 )
 
 #To send all the buffer and not the last line
@@ -50,6 +53,10 @@ try
 	if ($PSBoundParameters.ContainsKey('title') -eq "True")
 	{
 		$parameters.add("title", $title)
+	}
+	if ($PSBoundParameters.ContainsKey('target') -eq "True")
+	{
+		$parameters.add("device", $target)
 	}
 	#$parameters.add("html", 1)
     $parameters.add("message", $message)
